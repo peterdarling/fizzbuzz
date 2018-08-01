@@ -1,0 +1,35 @@
+{
+  "name": "fizzbuzz",
+  "version": "0.0.1",
+  "description": "Fizzbuzz",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petedarling/fizzbuzz.git"
+  },
+  "keywords": [
+    "blank",
+    "typescript"
+  ],
+  "author": "Pete Darling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterdarling/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/peterdarling/fizzbuzz#readme",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build": "rimraf dist/ &&  node_modules/.bin/tsc -p tsconfig.json",
+    "build:watch": "rimraf dist/ && node_modules/.bin/tsc -p tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.3",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "reflect-metadata": "^0.1.12"
+  }
+}
