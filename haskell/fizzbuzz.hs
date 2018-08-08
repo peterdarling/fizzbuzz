@@ -7,5 +7,4 @@ fizzBuzz x
     | (x `mod` 5 == 0) = "Buzz"
     | otherwise = show x
 
-main = do
-    putStr $ unlines $ map fizzBuzz [1..100]
+main = putStr $ unlines $ map fizzBuzz [1..100]
